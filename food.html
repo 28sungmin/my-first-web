@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <style>
+        #menu {
+        background : skyblue;
+    }
+    #menu ul { /* 여백과 패딩 모두 0 */
+        display : table;
+        margin-left : auto;
+        margin-right : auto;
+    }
+    #menu ul li {
+        display : inline-block; /* 새 줄로 넘어가지 않게 */
+        list-style-type : none; /* 마커 삭제 */
+        padding : 5px 35px; /* top=bottom=0, left=right=15px */ 
+        font-size : 20px;
+    }
+    #menu ul li a {
+        color : black;
+          text-decoration : none; /* 링크 보이지 않게 */
+    }
+    #menu ul li a:hover {
+         color : white;  /* 마우스 올라 갈 때 색 */
+    }
+    /* reason */
+    #reason {
+        margin-left : 300px;
+        margin-right : 300px;
+        margin-bottom : 50px;
+    }
+    /* 각자 설명 */
+    details {
+        text-align : center;
+        margin : 30px;
+    }
+    details > summary {
+        cursor : pointer;
+    }
+    </style>
+    <script src="food.js">
+    </script>
+</head>
+<body style="background-color:aliceblue">
+    <h2 style="text-align:center; font-size: 40px; font-style:italic">한국 음식</h2>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="drama.html">Drama</a></li>
+            <li><a href="kpop.html">K-POP</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    <div style="text-align:center; margin-top:50px">
+        아래의 음식 사진을 클릭하면 다음 음식 사진을 보여준다.<br>
+        총 5가지의 음식 사진이 있다.<p></p>
+            <img style="border:15px ridge greenyellow; box-shadow:10px 10px 5px skyblue" 
+                src="img/kimchi.jpg" alt="."
+                width="300" height="300" 
+                onclick="change(this)">
+    </div>
+    <p style="text-align:center; margin-top:50px; font-size:20px"><strong>한식의 인기 이유</strong></p>
+    <div id="reason" style="text-align:center">
+        오늘날 한국의 음식은 세계 여러 나라에서 큰 인기를 끌고 있다. 
+        심지어 영국에서는 식당 이름이 'kimchee'인 한식 식당도 있고
+        많은 인기를 누리고 있다. <br>
+        그렇다면 왜 한식이 외국인들 사이에서 큰 인기를 누리고 있는 것일까?
+        지금부터 그 이유를 알아보자. <br>
+        (물론, 인기 있는 한식들은 많지만 여기서는 
+        위의 사진에 있었던 5가지의 음식에 대해서만 알아볼 것이다.)<br>
+        위의 사진과 함께 설명을 보면 더 좋을 것 같다.
+    </div>
+    <hr>
+        <details style="margin-top:50px">
+            <summary style="font-size:20px"><span style="color:red">김치</span>가 유명한 이유</summary>
+            <p>김치는 한국의 전통요리 중 하나이다. 외국인들은
+                김치를 한식당이나 한국 마트에서 많이 접하는데,
+                그 맛에 매료된 외국인들이 바베큐 파티 등에서 이용하기도 한다.
+                <br>뿐만 아니라 김치는 건강한 발효음식이라 인기가 많은 것 같다.
+            </p>
+        </details>
+        <details>
+            <summary style="font-size:20px"><span style="color:red">잡채</span>가 유명한 이유</summary>
+            <p>잡채도 김치와 마찬가지로 한국의 전통요리 중 하나이다.
+                심지어 2020년 12월 뉴욕타임스에서는 봄철 채소로 해 먹기 좋은 
+                한식으로 잡채를 소개하기도 했었다. <br>
+                잡채는 외국의 파스타와 비슷하게 국수를 이용한다는 점에서
+                외국인들이 이질감을 많이 느끼지 않는다. 또한, 다양한 채소와 
+                기호에 따라 고기도 넣으며 건강한 식단으로도 유명하다. 
+            </p>
+        </details>
+        <details>
+            <summary style="font-size:20px"><span style="color:red">파전</span>이 유명한 이유</summary>
+            <p>파전은 '코리안 피자'라고 유명하다. 예능 프로그램 
+                '어서와 한국은 처음이지'에서 외국인들이 파전을 모른 상태에서 
+                '코리안 피자'라는 말만 듣고, 파전을 시킨 후 그 외양을 보고
+                매우 놀라했었다. <br>하지만 맛을 본 후에는 너무 맛있다는 반응이었다.
+                이렇듯, 파전은 외국의 피자와는 차원이 다른다. 싱싱한 채소와 
+                해산물들을 넣은 파전은 막걸리와도 찰떡궁합이다. 이 맛을
+                궁금해하는 외국인들이 많다고 한다.
+            </p>
+        </details>
+        <details>
+            <summary style="font-size:20px"><span style="color:red">한국식 라면</span>이 유명한 이유</summary>
+            <p>한국식 라면이 유명해지게 된 원인에는 영화 '기생충'이 있다.
+                '기생충'에 나왔던 '짜파구리'가 해외에서 큰 인기를 끌게 되었고, 
+                자연스레 라면에까지 그 관심이 전해졌다.<br>
+                외국인들은 한국식 라면의 맛에 좋은 평가를 했다.
+                인스타그램 등에서 'Ramyun' 등과 같은 검색어를 검색하면 
+                많은 외국인들이 라면을 즐기고 있는 것을 볼 수 있다. 또한, 
+                외국인들은 라면의 간편함에도 만족했다.
+            </p>
+        </details>
+        <details>
+            <summary style="font-size:20px"><span style="color:red">떡볶이</span>가 유명한 이유</summary>
+            <p>떡볶이는 처음에는 외국인들에게 큰 인기를 얻지 못했다.
+                아무래도 외국인들에게는 어색할 수 밖에 없는 떡의 식감 때문이었다.
+                <br>하지만 한류 열풍이 불게 되면서 외국인들은 한국 아이돌들이 
+                먹는 음식에도 관심을 가지게 되고 유튜버들의 먹방을 보면서 
+                떡볶이에 하나 둘 관심을 가지게 되었다.
+            </p>
+        </details>
+</body> 
+</html>

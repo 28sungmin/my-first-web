@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+    /* div.flag 부분*/
+    div.flag {
+        background-image : url("img/shape.jpg");
+        background-size : 260px 173px;
+        background-repeat : no-repeat;
+        background-position: center center;
+    }
+    /* h1 부분 */
+    @keyframes textColorAnimation {
+        0% { color : blue; }
+        30% { color : green; }
+        100% { color : orange; }
+    }
+    h1 {
+        text-align : center; 
+        margin-bottom : 50px;
+        font-size : 40px;
+        animation-name : textColorAnimation;
+        animation-duration: 3s;
+        animation-iteration-count : infinite;
+    }
+
+    /* menu bar */
+    #menu {
+        background : skyblue;
+    }
+    #menu ul { /* 여백과 패딩 모두 0 */
+        display : table;
+        margin-left : auto;
+        margin-right : auto;
+    }
+    #menu ul li {
+        display : inline-block; /* 새 줄로 넘어가지 않게 */
+        list-style-type : none; /* 마커 삭제 */
+        padding : 5px 50px; /* top=bottom=0, left=right=15px */ 
+        font-size : 20px;
+    }
+    #menu ul li a {
+        color : black;
+          text-decoration : none; /* 링크 보이지 않게 */
+    }
+    #menu ul li a:hover {
+         color : white;  /* 마우스 올라 갈 때 색 */
+    }
+    /* div.idol 부분 */
+    table {
+        border-spacing : 1px;
+        margin-left : auto;
+        margin-right : auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    table ul {
+        list-style-type : none;
+    }
+    #idol {
+        padding : 80px;
+        text-align: center;
+        border-style : solid;
+        border-color: blue;
+		border-bottom : none;
+    }
+    #idol li {
+        font-size : 20px;
+        padding : 20px;
+    }
+    #drama {
+        padding : 80px;
+        text-align: center;
+        border-style : solid;
+        border-color: red;
+		border-bottom : none;
+    }
+    #drama li {
+        font-size : 20px;
+        padding : 20px;
+    }
+    #food {
+        padding : 60px;
+        text-align: center;
+        border-style : solid;
+        border-color: green;
+		border-bottom : none;
+    }
+    #food li {
+        font-size : 20px;
+        padding : 20px;
+    }
+	/* 표 이미지 CSS */
+	#bts {
+		border-style : solid;
+		border-color : blue;
+	}
+	#love {
+		border-style : solid;
+		border-color : red;
+	}
+	#noodle {
+		border-style : solid;
+		border-color : green;
+	}
+    </style>
+    <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="flag">
+            <h1 style="font-size:40px">한류 이야기</h1>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="drama.html">Drama</a></li>
+                <li><a href="kpop.html">K-POP</a></li>
+                <li><a href="food.html">Food</a></li>
+            </ul>
+        </nav>
+        </div>
+        <hr color="skyblue">
+        <p style="margin-top:50px; font-size:20px; text-align:center;">오늘날 <span>한류</span>는 전 세계로 나아가고 있다.<br>
+        다 함께 <span>한류</span>에 대해서 알아보는 시간을 가져보자.<br><button onclick="hanryu()">눌러보세요</button></p>
+        <table>
+            <tbody>
+                <tr>
+                    <td id="idol">
+                        <ul>
+                            <li style="font-size:30px; color:blue"><strong>인기 아이돌</strong></li>
+                            <li>방탄소년단</li>
+                            <li>IVE</li>
+                            <li>(여자)아이들</li>
+                            <li>세븐틴</li>
+                            <li>BLACKPINK</li>
+                        </ul>
+                    </td>
+                    <td id="drama">
+                        <ul>
+                            <li style="font-size:30px; color:red"><strong>드라마 명작들</strong></li>
+                            <li>사랑의 불시착</li>
+                            <li>태양의 후예</li>
+                            <li>오징어게임</li>
+                            <li>별에서 온 그대</li>
+                            <li>D.P.</li>
+                            <li>갯마을 차차차</li>
+                        </ul>
+                    </td>
+                    <td id="food">
+                        <ul>
+                            <li style="font-size:30px; color:green"><strong>인기있는 음식들</strong></li>
+                            <li>김치</li>
+                            <li>한국식 라면</li>
+                            <li>잡채</li>
+                            <li>파전</li>
+                            <li>떡볶이</li>
+                        </ul>
+                    </td>
+                </tr>
+				<tr>
+					<td id="bts" style="text-align:center"><img src="img/bts.jpg" width="400px" height="300px"></td>
+					<td id="love" style="text-align:center"><img src="img/love.jpg" width="300px" height="400px"></td>
+					<td id="noodle" style="text-align:center"><img src="img/noodle.jpg" width="400px" height="300px"></td>
+				</tr>
+            </tbody>
+        </table>
+        <div style="text-align:center; border:2px solid; padding-bottom: 10px; margin-top : 40px;">
+            <p>더 많은 내용들을 알아보고 싶다면<br></p>  
+            <a href="https://www.google.co.kr">Google</a><br>
+            <a href="https://www.naver.com">naver</a>
+        </div>
+    </body>
+    </html>

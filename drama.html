@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drama</title>
+</head>
+<style>
+    #menu {
+        background : skyblue;
+    }
+    #menu ul { /* 여백과 패딩 모두 0 */
+        display : table;
+        margin-left : auto;
+        margin-right : auto;
+    }
+    #menu ul li {
+        display : inline-block; /* 새 줄로 넘어가지 않게 */
+        list-style-type : none; /* 마커 삭제 */
+        padding : 5px 35px; /* top=bottom=0, left=right=15px */ 
+        font-size : 20px;
+    }
+    #menu ul li a {
+        color : black;
+          text-decoration : none; /* 링크 보이지 않게 */
+    }
+    #menu ul li a:hover {
+         color : white;  /* 마우스 올라 갈 때 색 */
+    }
+    /* 애니메이션 */
+    @keyframes bigger {
+        from { font-size : 100%; }
+        to { font-size : 150%; }
+    }
+    #reason h3 {
+        animation-name : bigger;
+        animation-duration : 3s;
+        color : blue;
+    }
+    #reason {
+        margin-left : 300px;
+        margin-right : 300px;
+    }
+    /* 드라마 사례 */
+    table {
+        border-collapse: collapse;
+        margin-top : 40px;
+        margin-left : 300px;
+        margin-right : 300px;
+    }
+    th {
+        border : 2px solid;
+        border-color : blue;
+        padding-top : 10px;
+        padding-bottom : 10px;
+        background-color: lightblue; 
+    }
+    td {
+        border : 2px solid;
+        border-color : blue;
+        padding : 10px;
+    }
+    </style>
+<body style="background-color:aliceblue">
+    <h2 style="text-align:center; font-size:40px; font-style:italic">드라마</h2>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="drama.html">Drama</a></li>
+            <li><a href="kpop.html">K-POP</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    <div id="reason" style="margin-bottom:50px">
+        <h3 style="text-align:center; margin-top:50px; font-size:25px">한국 드라마의 인기 이유</h3>
+        <p>&nbsp;&nbsp;인기있는 드라마를 알아보기 전에, 왜 한국의 드라마가 이토록
+            세계적으로 인기가 많은 것인지에 대해 한번 생각해보자.
+            한국 드라마가 유명한 가장 큰 이유 중 하나는 한국적 특수성이 
+            드라마에 포함된다는 것이다. 그렇다면 한국적 특수성이란 무엇일까?<br><br>
+            &nbsp;&nbsp;한국적 특수성과 함께 알아두면 좋은 개념으로는 세계적 보편성이 있다.
+            대부분의 외국 드라마는 세계적 보편성에 따라 콘텐츠에 안정감을 주는 경향이
+            있다고 한다. 하지만, 한국 드라마는 한국적 특수성에 의해 콘텐츠에 호기심을
+            유발한다고 한다. 이 뿐만 아니라, 한국만의 소재인 사극, 분단국가 등의 내용을
+            드라마에 삽입하는 것도 한국 드라마의 인기를 높이는 데 한 몫을 했다.
+            두 번째, 한류 드라마의 인기 요인은 좋은 스토리와 배우들의 외모이다.
+            한국의 드라마는 스토리가 탄탄하기로 유명하고 배우들의 외모와 연기력은 
+            이루 말할 수 없을 정도로 완벽하다.
+        </p>
+    </div>
+    <hr>
+    <div id="example" style="margin-top:50px; text-align: center;">
+        <h3 style="text-align:center; font-size:25px">드라마 사례</h3>
+        <p style="margin-left:300px; margin-right:300px">&nbsp;&nbsp;앞에서 한국 드라마의 인기 이유를 보았으니, 
+            이러한 이유들을 충족하여 해외에서 큰 인기를 끌었던 드라마의 
+            몇 사례들을 살펴보자.<br>
+        </p>
+        <table>
+            <thead>
+                <tr><th>사랑의 불시착</th><th>오징어 게임</th><th>갯마을 차차차</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        세계 유일 분단국가인 한국에서만 가능한 스토리를 구상했다.
+                    남한의 여성과 북한의 남성이 사랑에 빠지는 스토리로
+                    분단국가의 현실로 인해 이루어질 수 없는 사랑을 안타까워하는 
+                    내용이 드라마에 많이 나왔다.<br>
+                    또한, 배우들의 탄탄한 연기력과 외모도 드라마의 인기를 
+                    높이는 데 큰 공을 세웠다.
+                    </td>
+                    <td>
+                        무궁화 꽃이 피었습니다, 줄다리기, 구슬치기 등
+                        한국의 전통놀이를 이용하여 스토리를 구성했다.
+                        한국인들에게는 우리들의 과거 놀이를 회상하는 기회가
+                        되었고, 외국인들에게는 생소한 놀이를 알려주는 계기가
+                        되었다. <br>
+                        이런 구상과 함께 파격적인 스토리 전개로 인해 더 큰
+                        관심을 받게 되었다. 뿐만 아니라, 모든 배우들의 연기가
+                        출중하였다.
+                    </td>
+                    <td>
+                        갯마을 이라는 다른 드라마에서는 많이 나오지 않는 배경의
+                        드라마가 나타났다. 또한, 흔히 말하는 악역이 없는
+                        평범한 사람들이 사는 일상적인 모습도 보여주어 큰 
+                        인기를 끌었다. <br>
+                        하지만 가장 큰 공을 세웠던 것은 다름 아닌 탄탄한 
+                        스토리였다. 매회 하나씩 떡밥을 던지며 끝났는데,
+                        그 떡밥들을 다 잘 회수하며 드라마를 마무리 지었다.
+                        이런 탄탄한 스토리 덕분에 러브라인도 잘 드러날 수 
+                        있었다.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

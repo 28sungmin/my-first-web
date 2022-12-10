@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            color : rgb(0, 0, 138);
+        }
+        li { /* 태그 이름 셀렉터 */
+            text-align: center;
+            color : black;
+        }
+        div > ul {
+            background : mistyrose;
+            padding-top : 30px;
+            padding-bottom : 30px;
+            font-size : 17px;
+            margin-right : 300px;
+            margin-left : 300px;
+        }
+        .warning { /* class 셀렉터 */
+            color : red;
+        }
+        body.main { /* class 셀렉터 */
+            background : aliceblue;
+        }
+        div > ul > li:hover { /* 가상 클래스 셀렉터 */
+            background : yellow;
+        }
+
+    /* menu bar 부분 */
+    #menu {
+        background : skyblue;
+    }
+    #menu ul { /* 여백과 패딩 모두 0 */
+        display : table;
+        margin-left : auto;
+        margin-right : auto;
+    }
+    #menu ul li {
+        display : inline-block; /* 새 줄로 넘어가지 않게 */
+        list-style-type : none; /* 마커 삭제 */
+        padding : 5px 35px; /* top=bottom=0, left=right=15px */ 
+        font-size : 20px;
+    }
+    #menu ul li a {
+        color : black;
+          text-decoration : none; /* 링크 보이지 않게 */
+    }
+    #menu ul li a:hover {
+         color : white;  /* 마우스 올라 갈 때 색 */
+    }
+    </style>
+    <script>
+        function use() {
+            let m1 = alert("한국국제문화교류진흥원, 네이버 두산백과, 구글", "<br>");
+            return m1;
+        }
+    </script>
+</head>
+<body class="main">
+    <h2 style="font-size:40px; font-style:italic">한류 소개</h2>
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="introduction.html">Introduction</a></li>
+            <li><a href="drama.html">Drama</a></li>
+            <li><a href="kpop.html">K-POP</a></li>
+            <li><a href="food.html">Food</a></li>
+        </ul>
+    </nav>
+    <p>길 글을 읽는데, 지루하지 않도록 노래를 넣었다.</p>
+    <audio src="Runway Fashion - Spence.mp3" onloadstart="this.volume=0.3" controls autoplay></audio>
+    <p></p>
+    <p></p>
+    <section>
+    <div>
+        <div style="font-size:23px; text-align:center; margin-top:50px"><strong>한류</strong>소개 목차</div>
+        <ul>
+            <li><span><a href="#definition" style="text-decoration:none">한류의 정의</a></span></li>
+            <li><span><a href="#kind" style="text-decoration:none">한류의 종류</a></span></li>
+            <li><span><a href="#future" style="text-decoration:none">한류의 전망</a></span></li>
+        </ul>
+        <div class="warning" onclick="use()" style="cursor:pointer; margin-left:300px">참고 문헌</div>
+    </div>
+    <p></p>
+    <h3 id="definition" style="padding-top:100px; text-align:center">한류의 정의</h3>
+    <p style="margin-left:300px; margin-right:300px">
+        &nbsp;&nbsp;사전적 정의로는 우리나라의 대중문화 요소가 외국에서 유행하는 현상이다.
+        1996년 한국의 드라마가 중국으로 수출되고 이후 가요까지 알려지게 되면서 대한민국의 대중문화가 인기를 얻게 되었다.
+        중국에서 한국 대중문화에 대한 열풍이 일기 시작하자, 중국 언론에서 이러한 현상을 표현하기 위해 '한류'라는 용어를 사용하기 시작하였다.
+        중국에서부터 시작된 열풍은 동남아시아 전역으로 확산되었다.
+        이후에는 한국의 대중문화 뿐만이 아니라, 한국의 음식이나 가전제품 등 한국 관련 제품들까지도 큰 인기를 끌게 되었다.
+        오늘날에는 이 모두를 포괄하는 의미에서 '한류'라는 용어를 사용한다.
+        최근에는 동남아시아를 넘어서 유럽이나 미국 등 전 세계적으로 한류가 뻗어나가고 있다.
+    </p>
+
+    <h3 id="kind" style="padding-top:50px; text-align:center">한류의 종류</h3>
+    <p style="margin-left:300px; margin-right:300px">
+        &nbsp;&nbsp;앞서 한류의 정의에서 말했듯이, 한국의 드라마, 가요, 영화, 음식이 해외에서 큰 인기를 끌고 있다. 
+        하지만 이를 넘어서서 이제는 가전제품과 전자기기까지도 전 세계로 퍼져나가고 있다.
+        외국에서 사람들의 핸드폰을 보면 많은 사람들이 SAMSUNG 핸드폰을 사용하고 있는 것을 심심치 않게 볼 수 있다.
+        뿐만 아니라, LG 가전제품도 많이 사용하고 있다.
+    </p>
+
+    <h3 id="future" style="padding-top:50px; text-align:center">한류의 전망</h3>
+    <p style="margin-left:300px; margin-right:300px">&nbsp;&nbsp;앞에서 보았듯, 한류는 현재 전세계적으로 선풍적인 인기를 끌고 있다.
+    하지만 이러한 인기가 지속될 것이라고 믿어서는 안된다. 유행이라는 것은 언제든지 변하는 것이다.
+    그렇다면 한류의 인기를 계속 이어나가기 위해서 우리는 무엇을 해야 할까?<br><br>
+    &nbsp;&nbsp;먼저, 한류콘텐츠의 경쟁 상대와의 특수성을 가져야 한다. 다른 나라의 콘텐츠들과 비슷한 내용으로
+    구성하는 것이 아니라, 우리만의 특성을 내세워야 한다.
+    두 번째, 한류에 대한 접촉률을 높여야 한다. 물론, 오늘날 한류가 많은 인기를 끌고 있다고는 하지만,
+    이는 보통 원래 한류에 관심이 많았던 사람들 덕분이다. 다시 말해, 한류에 관심이 없는 사람들은
+    한류 콘텐츠에 많이 접근하지 않고 있다.
+    마지막으로, 언어 차이도 우리가 해결해야 할 문제이다. 아무래도 한글은 전세계적으로 통용되는 
+    언어가 아니다보니, 이러한 부분에서 한류에 대한 호감을 저해한다는 연구 결과가 있다. 
+    따라서 정부 차원의 지원을 통해 이를 해소하려는 노력이 필요하다.
+    </p>
+    </section>
+</body>
+</html>
